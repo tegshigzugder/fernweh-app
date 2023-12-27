@@ -2,6 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { Quasar } from 'quasar'
 
 import App from './App.vue'
 import router from './router'
@@ -16,5 +17,5 @@ app.use(router)
 
 app.component('base-card', BaseCard);
 app.component('base-button', BaseButton);
-
+app.use(Quasar);
 app.mount('#app')

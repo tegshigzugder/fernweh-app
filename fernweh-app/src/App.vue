@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import type PlacesView from './components/PlacesView.vue'
-
+import MockCard from './mocks/MockCard.vue'
 let placesview = '/placesview'
 </script>
 
@@ -9,6 +8,7 @@ let placesview = '/placesview'
     <h1>👋</h1>
     <base-button :to="placesview">Places</base-button>
   </base-card>
+  <MockCard />
   <router-view></router-view>
 </template>
 
